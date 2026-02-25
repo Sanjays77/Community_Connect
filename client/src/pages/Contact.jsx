@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import Navbar from '../components/Navbar';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
@@ -92,70 +91,6 @@ const Contact = () => {
                     </div>
                 </div>
             </section>
-=======
-
-import React from 'react';
-import Navbar from '../components/Navbar';
-import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin } from 'lucide-react';
-
-const Contact = () => {
-    return (
-        <div className="min-h-screen bg-gray-50 flex flex-col">
-            <Navbar />
-            <div className="flex-1 flex flex-col items-center justify-center py-20 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-4xl w-full space-y-8 bg-white p-10 rounded-2xl shadow-xl">
-                    <div className="text-center">
-                        <h2 className="text-3xl font-extrabold text-gray-900">Get in Touch</h2>
-                        <p className="mt-2 text-gray-600">We'd love to hear from you!</p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                        <div className="space-y-6">
-                            <motion.div
-                                whileHover={{ scale: 1.02 }}
-                                className="flex items-center space-x-4 p-4 bg-indigo-50 rounded-lg"
-                            >
-                                <Mail className="text-indigo-600" size={24} />
-                                <span className="text-gray-700">support@communityconnect.com</span>
-                            </motion.div>
-                            <motion.div
-                                whileHover={{ scale: 1.02 }}
-                                className="flex items-center space-x-4 p-4 bg-purple-50 rounded-lg"
-                            >
-                                <Phone className="text-purple-600" size={24} />
-                                <span className="text-gray-700">+1 (555) 123-4567</span>
-                            </motion.div>
-                            <motion.div
-                                whileHover={{ scale: 1.02 }}
-                                className="flex items-center space-x-4 p-4 bg-green-50 rounded-lg"
-                            >
-                                <MapPin className="text-green-600" size={24} />
-                                <span className="text-gray-700">123 Tech Park, Silicon Valley</span>
-                            </motion.div>
-                        </div>
-
-                        <form className="space-y-4">
-                            <div>
-                                <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
-                                <input type="text" id="name" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3 border" placeholder="Your Name" />
-                            </div>
-                            <div>
-                                <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-                                <input type="email" id="email" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3 border" placeholder="you@example.com" />
-                            </div>
-                            <div>
-                                <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
-                                <textarea id="message" rows="4" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 sm:text-sm p-3 border" placeholder="How can we help?"></textarea>
-                            </div>
-                            <button type="submit" className="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors">
-                                Send Message
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
->>>>>>> 8044050 (chore: add client and server folders)
         </div>
     );
 };

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import Navbar from '../components/Navbar';
 import { Target, Users, Zap, CheckCircle, ShieldCheck } from 'lucide-react';
@@ -77,67 +76,6 @@ const About = () => {
                     </div>
                 </div>
             </section>
-=======
-
-import React from 'react';
-import Navbar from '../components/Navbar';
-import { motion } from 'framer-motion';
-
-const About = () => {
-    return (
-        <div className="min-h-screen bg-gray-50">
-            <Navbar />
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="bg-white rounded-3xl shadow-xl overflow-hidden"
-                >
-                    <div className="md:flex">
-                        <div className="md:w-1/2 p-12">
-                            <h2 className="text-3xl font-bold text-gray-900 mb-6">About CommunityConnect</h2>
-                            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                                CommunityConnect was born from the need to simplify residential society management.
-                                We realized that traditional methods like manual ledgers and chaotic WhatsApp groups
-                                were inefficient and often led to miscommunication.
-                            </p>
-                            <p className="text-gray-600 mb-6 text-lg leading-relaxed">
-                                Our mission is to create smarter, safer, and more connected communities. By leveraging
-                                modern technology, we empower residents, admins, and security personnel to work seamlessly together.
-                            </p>
-                            <button className="bg-indigo-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-indigo-700 transition">
-                                Join Our Vision
-                            </button>
-                        </div>
-                        <div className="md:w-1/2 bg-indigo-100 flex items-center justify-center p-12">
-                            <img
-                                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                                alt="Team collaboration"
-                                className="rounded-xl shadow-lg transform rotate-3 hover:rotate-0 transition duration-500"
-                            />
-                        </div>
-                    </div>
-                </motion.div>
-
-                <div className="mt-20">
-                    <h3 className="text-2xl font-bold text-center mb-10 text-gray-800">Our Core Values</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div className="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-blue-500 text-center">
-                            <h4 className="text-xl font-bold mb-2">Transparency</h4>
-                            <p className="text-gray-500">Open communication and clear financial records for everyone.</p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-green-500 text-center">
-                            <h4 className="text-xl font-bold mb-2">Efficiency</h4>
-                            <p className="text-gray-500">Automating repetitive tasks to save time and reduce errors.</p>
-                        </div>
-                        <div className="bg-white p-8 rounded-2xl shadow-sm border-t-4 border-purple-500 text-center">
-                            <h4 className="text-xl font-bold mb-2">Community</h4>
-                            <p className="text-gray-500">Fostering a sense of belonging and mutual support among residents.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
->>>>>>> 8044050 (chore: add client and server folders)
         </div>
     );
 };

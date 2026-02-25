@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React from 'react';
 import Navbar from '../components/Navbar';
 import { ShieldCheck, Bell, MessageSquare, CreditCard, Users, Calendar, Clock, Lock } from 'lucide-react';
@@ -79,46 +78,6 @@ const Features = () => {
                     </div>
                 </div>
             </section>
-=======
-
-import React from 'react';
-import Navbar from '../components/Navbar';
-import { motion } from 'framer-motion';
-import { Truck, Home, Activity, DollarSign, Calendar, MessageSquare, Wrench, Lock, Shield } from 'lucide-react';
-
-const FeatureItem = ({ icon: Icon, title, desc }) => (
-    <motion.div
-        whileHover={{ scale: 1.05 }}
-        className="bg-white p-6 rounded-xl shadow-md border border-gray-100 flex flex-col items-center text-center"
-    >
-        <div className="p-4 bg-indigo-50 rounded-full mb-4 text-indigo-600">
-            <Icon size={32} />
-        </div>
-        <h3 className="text-xl font-bold text-gray-800 mb-2">{title}</h3>
-        <p className="text-gray-600">{desc}</p>
-    </motion.div>
-);
-
-const Features = () => {
-    return (
-        <div className="min-h-screen bg-gray-50 pb-20">
-            <Navbar />
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <h1 className="text-4xl font-extrabold text-center text-gray-900 mb-4">Powerful Features</h1>
-                <p className="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto">
-                    Manage every aspect of your residential community with our comprehensive suite of tools.
-                </p>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <FeatureItem icon={MessageSquare} title="Community Feed" desc="Share updates, photos, and polls with neighbors instantly." />
-                    <FeatureItem icon={DollarSign} title="Payment Gateway" desc="Securely pay maintenance bills and track payment history." />
-                    <FeatureItem icon={Calendar} title="Amenity Booking" desc="Reserve clubhouse, gym, or tennis court slots online." />
-                    <FeatureItem icon={Shield} title="Gate Security" desc="Monitor visitor entry and exit logs in real-time." />
-                    <FeatureItem icon={Wrench} title="Helpdesk" desc="Raise maintenance tickets and track their resolution status." />
-                    <FeatureItem icon={Lock} title="Privacy Control" desc="Control who can see your contact details within the society." />
-                </div>
-            </div>
->>>>>>> 8044050 (chore: add client and server folders)
         </div>
     );
 };
