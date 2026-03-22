@@ -38,8 +38,8 @@ const Sidebar = () => {
 
     return (
         <div className="w-64 bg-slate-900 text-white flex flex-col min-h-screen shadow-2xl">
-            <div className="p-6 text-2xl font-black tracking-wider text-center border-b border-white/10">
-                <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-300">
+            <div className="px-4 py-6 text-xl font-black tracking-tight text-center border-b border-white/10 overflow-hidden">
+                <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-300 whitespace-nowrap">
                     CommunityConnect
                 </span>
             </div>
